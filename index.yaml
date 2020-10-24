@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  strimzi-kafka:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2020-10-24T22:48:46.766828+03:00"
+    description: A Helm chart for Kafka built on strimzi
+    digest: 4e9a4736b3536c923b912be806ea562b71c8ae1bd23a588219863f62fb38d4f5
+    name: strimzi-kafka
+    type: application
+    urls:
+    - strimzi-kafka-0.0.1.tgz
+    version: 0.0.1
+generated: "2020-10-24T22:48:46.766335+03:00"
