@@ -1,0 +1,8 @@
+namespace: infrastructure
+kafka:
+  replicas: 1
+  diskSize: 20Gi
+  listenerPort: 9092
+zookeeper:
+  replicas: 1
+  diskSize: 10Gi

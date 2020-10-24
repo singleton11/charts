@@ -1,0 +1,22 @@
+apiVersion: kafka.strimzi.io/v1beta1
+kind: Kafka
+metadata:
+  name: main-kafka-cluster
+  namespace: {{ .Values.namespace }}
+spec:
+  kafka:
+    replicas: {{ .Values.kafka.replicas }}
+    storage:
+      type: persistent-claim
+      size: {{ .Values.kafka.diskSize }}
+    listeners:
+      - name: plain
+        port: {{ .Values.kafka.listenerPort }}
+        type: internal
+        tls: false
+        useServiceDnsDomain: true
+  zookeeper:
+    replicas: {{ .Values.zookeeper.replicas }}
+    storage:
+      type: persistent-claim
+      size: {{ .Values.zookeeper.diskSize }}
